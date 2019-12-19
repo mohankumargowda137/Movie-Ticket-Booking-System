@@ -32,6 +32,7 @@ $_SESSION['mid']=0;
         }
         
   </script>
+    
  
 </head>
 <body>
