@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>
+            BOOK MY SLOT
+        </title>
+        <link rel="icon" href="slogo.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core@4.7.4/css/ionic.bundle.css"/>
+    </head>
+    <body>
+        <ion-app>
+            <ion-header>
+                    <ion-toolbar color="primary">
+                            <img src="logo.png" style="height:70px;">
+                        </ion-toolbar>
+            </ion-header>
+            <ion-content>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-md="5" offset-md="3.5">
+                            <ion-card color="dark"> 
+                                <ion-card-header>
+                                    <div text-center>
+                                            <ion-title>SIGNUP</ion-title>
+                                    </div>
+                                </ion-card-header>
+                                <ion-card-content>
+                                  <ion-row>
+                                      <ion-col size-md="4.5"></ion-col>
+                                      <ion-col size-md="3"><img src="slogo.png" style="height: 100px;width: 100px;border-radius: 100%;"></ion-col>
+                                      <ion-col size-md="3.5"></ion-col>
+                                  </ion-row>
+                                <form action="sup.php" method="POST">
+                                        <ion-item>
+                                            <ion-label position="floating">NAME</ion-label>
+                                            <ion-input type="string" name="name" requires="true"></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                            <ion-label position="floating">E-MAIL</ion-label>
+                                            <ion-input type="mail" name="email" requires="true"></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                            <ion-label position="floating">USERNAME</ion-label>
+                                            <ion-input type="string" name="uname" requires="true"></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                            <ion-label position="floating" >MOBILE</ion-label>
+                                            <ion-input type="tel" name="mobile" requires="true" maxlength="10"></ion-input>
+                                        </ion-item>
+                                         <ion-item>
+                                               <ion-label position="floating">PASSWORD</ion-label>
+                                               <ion-input type="password" name="pwd" requires="true"></ion-input>
+                                        </ion-item>
+                                        <ion-item>
+                                                <ion-label position="floating">CONFIRM PASSWORD</ion-label>
+                                                <ion-input type="password" name="cpwd" requires="true"></ion-input>
+                                         </ion-item>
+                                        <ion-item>
+                                            <ion-label position="floating">ADDRESS</ion-label>
+                                            <ion-input type="string" name="address" requires="true"></ion-input>
+                                        </ion-item>
+                                        <div text-center>
+                                            <ion-button color="success" type="submit">SIGN UP</ion-button>
+                                        </div>
+                                </form>
+                                </ion-card-content>
+                            </ion-card>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-content>
+        </ion-app>
+    </body>
+</html>
